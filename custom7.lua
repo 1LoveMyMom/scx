@@ -100,7 +100,7 @@ function mainMenu()
   end
   
   
-  if m1 == 1 then
+  if m1 == 2 then
 		if blocker == 1 then
 		b = gg.alert("You already reset the time. But do you want use again?", "YES", "NO")
   		if b == 1 then
@@ -186,7 +186,7 @@ function mainMenu()
 	end
 
   
-  if m1 == 2 then
+  if m1 == 3 then
     aw = gg.alert("WARNING\nPlease make sure you are in the Vu Pass T1 2000 Simoleon.", "OK WAIT", "IM READY")
 	if aw == 1 then
 		gg.toast("\nI waiting u...")
@@ -207,14 +207,14 @@ function mainMenu()
     console = console.."Simoleon are set to 40.000.000.\n"
   end
   
-  if m1 == 3 then
+  if m1 == 4 then
     console = console..n.."Exiting..."
     print("EXIT SUCCESSFUL\n\n"..console)
     gg.setVisible(true)
     os.exit()
   end
   
-  if m1 == 4 then
+  if m1 == 5 then
 	  c = gg.alert(console, "OK",nil, "INPUT")
 	  if c == 3 then
 	    cp = gg.prompt({'Command Module (Use "help" command for help. )'}, {""}, {"text"})
@@ -268,7 +268,7 @@ function mainMenu()
 	   end
   end
   
-  if m1 == 5 then
+  if m1 == 6 then
     gg.alert("SCRIPT ABOUT \n---------------- \nVersion: 1.0_b \nSituation: BETA \nCurrently Bit Version: x"..deviceBit.." \nStability: %66 \nDeveloper: SimpleCodeStudio")
   end
 end
