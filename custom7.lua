@@ -67,7 +67,7 @@ function protectionKey()
   p = gg.prompt({"Protection Key:"}, {""}, {"text"})
   if p == nil then
   else
-  if p[1] == "test" then
+  if p[1] == "free" then
     console = console..n.."Protection key is correct.\n"
     gg.toast("\nProtection key is correct.")
     zindex = 2
