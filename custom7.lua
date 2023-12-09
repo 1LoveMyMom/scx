@@ -85,7 +85,20 @@ end
 
 
 function mainMenu()
-  m1 = gg.choice({"| Timer Reseter |", "| 40m Simoleon |", "| EXIT |", "| CONSOLE |", "| ABOUT |"},nil,"[BETA x"..deviceBit.."] Free Version♡ (Updated: "..update..")")
+  m1 = gg.choice({"| Get Premium |", "| Timer Reseter |", "| 40m Simoleon |", "| EXIT |", "| CONSOLE |", "| ABOUT |"},nil,"[BETA x"..deviceBit.."] Free Version♡ (Updated: "..update..")")
+  
+  if m1 == 1 then
+    c = gg.choice({"Get With Patreon", "Or Contact the developer for new payment method."},nil,"Get Premium")
+    if c == 1 then
+      gg.copyText("https://www.patreon.com/user/membership?u=86903282")
+      gg.alert("Patreon link is copied your clipboard.")
+    end
+    if c == 2 then
+      gg.copyText("+905528186082")
+      gg.alert("Copied Developer Whatsapp number. You can contact the developer from whatsapp or discord.")
+    end
+  end
+  
   
   if m1 == 1 then
 		if blocker == 1 then
