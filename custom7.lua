@@ -1,7 +1,7 @@
 gg.showUiButton()
 local console = "CONSOLE v1.0\n----------------\n"..os.date("(%H:%M)  ").."Script executed.\n"
 
-local update = "10/12/2023"
+local update = "15/12/2023"
 local vp1Simcash = {}
 local timerOfset = {}
 local blocker = 0
@@ -135,8 +135,11 @@ function mainMenu()
 		  ofsets()
   		gg.clearResults()
   		gg.clearList()
+  		gg.sleep("500")
   			gg.searchNumber("25200000",gg.TYPE_DWORD)
 		end
+		gg.clearList()
+		gg.sleep("200")
 		R2 = gg.getResults(1)
 		ofset[1] = {}
 		ofset[1].address = R2[1].address - timerOfset
@@ -178,7 +181,6 @@ function mainMenu()
 		gg.setValues(rslt)
 		rslt = nil
     gg.clearResults()
-    gg.clearList()
 		gg.toast("\nSuccessful")
 		blocker = 1
 		console = console.."Successful.\n"
