@@ -209,7 +209,7 @@ function mainMenu()
     console = console.."Simoleon are set to 40.000.000.\n"
   end
   
-  id m1 == 4 then
+  if m1 == 4 then
     gg.alert("(Estimated limits) Dont reach this limits:\n\nSimoleon: 40m\nSimcash: 48k\nGolden key: 500\nPlatinum Key: 500\nNeo Simoleons: 10m (eta)")
   end
   
