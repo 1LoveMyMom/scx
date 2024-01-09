@@ -1,7 +1,7 @@
 gg.showUiButton()
 local console = "CONSOLE v1.0\n----------------\n"..os.date("(%H:%M)  ").."Script executed.\n"
 
-local update = "15/12/2023"
+local update = "9/1/2024"
 local vp1Simcash = {}
 local timerOfset = {}
 local blocker = 0
@@ -85,7 +85,7 @@ end
 
 
 function mainMenu()
-  m1 = gg.choice({"| Get Premium |", "| Timer Reseter |", "| 40m Simoleon |", "| EXIT |", "| CONSOLE |", "| ABOUT |"},nil,"[BETA x"..deviceBit.."] Free Version♡ (Updated: "..update..")")
+  m1 = gg.choice({"| Get Premium |", "| Timer Reseter |", "| 40m Simoleon |", "| Limitations |", "| EXIT |", "| CONSOLE |", "| ABOUT |"},nil,"[BETA x"..deviceBit.."] Free Version♡ (Updated: "..update..")")
   
   if m1 == 1 then
     c = gg.choice({"Get With Patreon", "Or Contact the developer for new payment method."},nil,"Get Premium")
@@ -209,14 +209,18 @@ function mainMenu()
     console = console.."Simoleon are set to 40.000.000.\n"
   end
   
-  if m1 == 4 then
+  id m1 == 4 then
+    gg.alert("(Estimated limits) Dont reach this limits:\n\nSimoleon: 40m\nSimcash: 48k\nGolden key: 500\nPlatinum Key: 500\nNeo Simoleons: 10m (eta)")
+  end
+  
+  if m1 == 5 then
     console = console..n.."Exiting..."
     print("EXIT SUCCESSFUL\n\n"..console)
     gg.setVisible(true)
     os.exit()
   end
   
-  if m1 == 5 then
+  if m1 == 6 then
 	  c = gg.alert(console, "OK",nil, "INPUT")
 	  if c == 3 then
 	    cp = gg.prompt({'Command Module (Use "help" command for help. )'}, {""}, {"text"})
@@ -270,7 +274,7 @@ function mainMenu()
 	   end
   end
   
-  if m1 == 6 then
+  if m1 == 7 then
     gg.alert("SCRIPT ABOUT \n---------------- \nVersion: 1.0_b \nSituation: BETA \nCurrently Bit Version: x"..deviceBit.." \nStability: %66 \nDeveloper: SimpleCodeStudio")
   end
 end
